@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:8501",
+  "desktop_startup": {
+    "width": 1440,
+    "height": 1000
+  },
+  "desktop_profile": {
+    "width": 1440,
+    "height": 1400
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "horizontal_overflow": false
+  },
+  "startup_rendered": true,
+  "profile_rendered": true,
+  "app_exception_rendered": false,
+  "browser_runtime_exception_count": 0,
+  "screenshots": [
+    "desktop-startup.png",
+    "desktop-profile.png",
+    "mobile-profile.png"
+  ],
+  "scope": "Real local browser; no AI conversation or Jikan query submitted."
+}

@@ -1,0 +1,29 @@
+[browser]
+gatherUsageStats = false
+
+# Cozy late-evening palette: deep plum night with sakura-pink accents.
+[theme]
+base = "dark"
+primaryColor = "#E0607E"
+backgroundColor = "#1B1626"
+secondaryBackgroundColor = "#2A2238"
+textColor = "#F4ECF7"
+linkColor = "#F7A8C0"
+borderColor = "#3D3352"
+showWidgetBorder = true
+showSidebarBorder = false
+baseRadius = "large"
+buttonRadius = "full"
+linkUnderline = false
+font = "Nunito:https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+headingFont = "'M PLUS Rounded 1c':https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap"
+headingFontWeights = [800, 700, 700, 600, 600, 600]
+violetColor = "#B392F0"
+blueColor = "#7AA2F7"
+greenColor = "#7FD1A8"
+orangeColor = "#F2A65A"
+redColor = "#F7768E"
+
+[theme.sidebar]
+backgroundColor = "#151120"
+secondaryBackgroundColor = "#231C30"

@@ -1,0 +1,24 @@
+{
+  "description": "Hand-authored fixed metadata fixture for reproducible software evaluation, not a live API snapshot or human relevance labels. Nulls deliberately exercise missing metadata.",
+  "fixture_version": "2026-10-14",
+  "records": [
+    {"mal_id":1,"title":"Cowboy Bebop","genres":[{"name":"Action"},{"name":"Sci-Fi"}],"themes":[{"name":"Space"}],"episodes":26,"score":8.7,"synopsis":"Space bounty hunters travel together.","url":"https://myanimelist.net/anime/1"},
+    {"mal_id":6,"title":"Trigun","genres":[{"name":"Action"},{"name":"Sci-Fi"}],"themes":[{"name":"Adventure"}],"episodes":26,"score":8.2,"synopsis":"A wandering gunman meets travelling companions.","url":"https://myanimelist.net/anime/6"},
+    {"mal_id":20,"title":"Naruto","genres":[{"name":"Action"},{"name":"Adventure"}],"themes":[{"name":"Martial Arts"}],"episodes":220,"score":8.0,"synopsis":"A ninja pursues growth and adventure.","url":"https://myanimelist.net/anime/20"},
+    {"mal_id":4081,"title":"Natsume Yuujinchou","title_english":"Natsume's Book of Friends","title_synonyms":["Natsume Book of Friends"],"genres":[{"name":"Slice of Life"},{"name":"Supernatural"}],"themes":[{"name":"Friendship"}],"episodes":13,"score":8.3,"synopsis":"A student meets spirits and forms friendships.","url":"https://myanimelist.net/anime/4081"},
+    {"mal_id":457,"title":"Mushishi","genres":[{"name":"Slice of Life"},{"name":"Supernatural"}],"themes":[{"name":"Nature"}],"episodes":26,"score":8.6,"synopsis":"A traveller investigates mysterious natural creatures.","url":"https://myanimelist.net/anime/457"},
+    {"mal_id":22789,"title":"Barakamon","genres":[{"name":"Slice of Life"},{"name":"Comedy"}],"themes":[{"name":"Personal growth"}],"episodes":12,"score":8.4,"synopsis":"A calligrapher grows through life on an island.","url":"https://myanimelist.net/anime/22789"},
+    {"mal_id":1535,"title":"Death Note","genres":[{"name":"Suspense"},{"name":"Supernatural"}],"themes":[{"name":"Psychological"}],"episodes":37,"score":8.6,"synopsis":"A student and a detective engage in a battle of wits.","url":"https://myanimelist.net/anime/1535"},
+    {"mal_id":22135,"title":"Ping Pong the Animation","genres":[{"name":"Sports"},{"name":"Drama"}],"themes":[{"name":"Personal growth"}],"episodes":11,"score":8.6,"synopsis":"Players develop through competitive table tennis.","url":"https://myanimelist.net/anime/22135"},
+    {"mal_id":900001,"title":"Missing metadata regression fixture","genres":[],"themes":[],"episodes":null,"score":null,"synopsis":null,"url":"https://example.org/test-catalogue/900001"}
+  ],
+  "profiles": [
+    {"name":"brief action","profile":{"genres":["Action"],"viewing_intent":"action adventure"},"expected_ids":[1,6,20]},
+    {"name":"detailed short comfort","profile":{"genres":["Slice of Life","Comedy"],"themes":["Personal growth"],"viewing_intent":"short series","max_episodes":13,"min_score":7},"expected_ids":[22789]},
+    {"name":"exclusions and alias watched","profile":{"genres":["Slice of Life"],"excluded_genres":["Action"],"watched_titles":["Natsume's Book of Friends"],"max_episodes":26},"expected_ids":[457,22789]},
+    {"name":"conflicting constraints","profile":{"genres":["Action"],"excluded_genres":["Action","Slice of Life","Suspense","Sports"],"max_episodes":10},"expected_ids":[]},
+    {"name":"obscure theme","profile":{"genres":["Sports"],"themes":["Personal growth"],"max_episodes":12},"expected_ids":[22135]},
+    {"name":"missing metadata strict bounds","profile":{"max_episodes":13,"min_score":7},"expected_ids":[4081,22789,22135]},
+    {"name":"follow up exclusions","profile":{"genres":["Action"],"watched_ids":[1],"max_episodes":26},"expected_ids":[6]}
+  ]
+}

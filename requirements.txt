@@ -1,0 +1,13 @@
+# Tested direct dependencies on Python 3.11 / Windows.
+# Install: python -m pip install -r requirements.txt
+# Run: python -m streamlit run main.py
+python-dotenv==1.2.4
+streamlit==1.65.0
+requests==2.34.2
+sentence-transformers==5.7.0
+numpy==2.4.6
+scikit-learn==1.9.1
+pydantic==2.14.1
+# Gemini integration; Mistral uses the native OpenAI-compatible client.
+langchain-google-genai==2.1.12
+openai==1.109.1

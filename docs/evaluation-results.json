@@ -1,0 +1,374 @@
+{
+  "method": "Actual saved V1 functions and V2 on identical hand-authored records with deterministic keyword embedding and mocked provider. No live API/model/human scores.",
+  "fixture_description": "Hand-authored fixed metadata fixture for reproducible software evaluation, not a live API snapshot or human relevance labels. Nulls deliberately exercise missing metadata.",
+  "fixture_version": "2026-10-14",
+  "targets_defined_before_execution": {
+    "v2_hard_constraint_violations": 0,
+    "v2_source_coverage": 1.0,
+    "v2_evidence_coverage": 1.0,
+    "v2_max_explanation_calls_per_run": 1,
+    "v2_repeat_catalogue_vectors_encoded": 0
+  },
+  "profiles": [
+    {
+      "name": "brief action",
+      "expected_fixture_ids": [
+        1,
+        6,
+        20
+      ],
+      "v1": {
+        "selected_ids": [
+          1,
+          6,
+          20,
+          900001,
+          4081
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.004110899999432149,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 488,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [
+          6,
+          1,
+          20,
+          900001,
+          457
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.004731299999548355,
+        "explanation_calls": 1,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 424,
+        "response_words_two_runs": 160
+      }
+    },
+    {
+      "name": "detailed short comfort",
+      "expected_fixture_ids": [
+        22789
+      ],
+      "v1": {
+        "selected_ids": [
+          22789,
+          4081,
+          457,
+          22135,
+          900001
+        ],
+        "hard_constraint_violations": 2,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.0035833000001730397,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 508,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [
+          22789,
+          22135,
+          4081
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 3,
+        "local_mock_elapsed_seconds": 0.002334599999812781,
+        "explanation_calls": 1,
+        "embedding_texts_first_run": 4,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 400,
+        "response_words_two_runs": 104
+      }
+    },
+    {
+      "name": "exclusions and alias watched",
+      "expected_fixture_ids": [
+        457,
+        22789
+      ],
+      "v1": {
+        "selected_ids": [
+          4081,
+          457,
+          22789,
+          900001,
+          1
+        ],
+        "hard_constraint_violations": 3,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.004297400000723428,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 500,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [
+          457,
+          22789,
+          22135
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 3,
+        "local_mock_elapsed_seconds": 0.0028335999995761085,
+        "explanation_calls": 1,
+        "embedding_texts_first_run": 4,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 310,
+        "response_words_two_runs": 104
+      }
+    },
+    {
+      "name": "conflicting constraints",
+      "expected_fixture_ids": [],
+      "v1": {
+        "selected_ids": [
+          1,
+          6,
+          20,
+          900001,
+          4081
+        ],
+        "hard_constraint_violations": 5,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 0.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.004811599999811733,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 488,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 0,
+        "local_mock_elapsed_seconds": 0.0002537000000302214,
+        "explanation_calls": 0,
+        "embedding_texts_first_run": 0,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 0,
+        "response_words_two_runs": 0
+      }
+    },
+    {
+      "name": "obscure theme",
+      "expected_fixture_ids": [
+        22135
+      ],
+      "v1": {
+        "selected_ids": [
+          22135,
+          22789,
+          900001,
+          1,
+          6
+        ],
+        "hard_constraint_violations": 3,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.005013800000597257,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 496,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [
+          22135,
+          22789
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 2,
+        "local_mock_elapsed_seconds": 0.0019584000001486856,
+        "explanation_calls": 1,
+        "embedding_texts_first_run": 3,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 274,
+        "response_words_two_runs": 68
+      }
+    },
+    {
+      "name": "missing metadata strict bounds",
+      "expected_fixture_ids": [
+        4081,
+        22135,
+        22789
+      ],
+      "v1": {
+        "selected_ids": [
+          900001,
+          1,
+          6,
+          4081,
+          457
+        ],
+        "hard_constraint_violations": 4,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 0.3333333333333333,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 3,
+        "local_mock_elapsed_seconds": 0.004576900000756723,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 490,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [
+          22135,
+          4081,
+          22789
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 3,
+        "local_mock_elapsed_seconds": 0.0026448999997228384,
+        "explanation_calls": 1,
+        "embedding_texts_first_run": 4,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 248,
+        "response_words_two_runs": 96
+      }
+    },
+    {
+      "name": "follow up exclusions",
+      "expected_fixture_ids": [
+        6
+      ],
+      "v1": {
+        "selected_ids": [
+          1,
+          6,
+          20,
+          900001,
+          4081
+        ],
+        "hard_constraint_violations": 3,
+        "source_coverage": 0.0,
+        "evidence_coverage": 0.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.004075499999089516,
+        "explanation_calls": 5,
+        "embedding_texts_first_run": 10,
+        "repeat_catalogue_vectors_encoded": 9,
+        "mock_retrieval_requests_first_run": 1,
+        "prompt_words_two_runs": 488,
+        "response_words_two_runs": 90
+      },
+      "v2": {
+        "selected_ids": [
+          6,
+          457,
+          22135,
+          22789,
+          4081
+        ],
+        "hard_constraint_violations": 0,
+        "source_coverage": 1.0,
+        "evidence_coverage": 1.0,
+        "fixture_expected_recall_at_5": 1.0,
+        "input_retrieval_recall": 1.0,
+        "distinct_genre_sets": 4,
+        "local_mock_elapsed_seconds": 0.0026763999994727783,
+        "explanation_calls": 1,
+        "embedding_texts_first_run": 6,
+        "repeat_catalogue_vectors_encoded": 0,
+        "mock_retrieval_requests_first_run": 0,
+        "prompt_words_two_runs": 382,
+        "response_words_two_runs": 160
+      }
+    }
+  ],
+  "limitations": [
+    "Keyword vectors do not measure human relevance or production semantic quality.",
+    "Mock elapsed time is local computation only; first visible message/token latency and billed token/cost require live UI/provider measurement.",
+    "Retrieval coverage uses the complete fixture input, not live Jikan pagination performance.",
+    "V1 snapshot includes earlier reliability fixes and is the pre-V2 repository baseline.",
+    "Prompt/response word counts are instrumentation, not tokenizer counts or billed API costs."
+  ],
+  "aggregate": {
+    "v1": {
+      "hard_constraint_violations": 20,
+      "max_explanation_calls": 5,
+      "repeat_catalogue_vectors_encoded": 63,
+      "mean_fixture_expected_recall_at_5": 0.7619047619047619
+    },
+    "v2": {
+      "hard_constraint_violations": 0,
+      "max_explanation_calls": 1,
+      "repeat_catalogue_vectors_encoded": 0,
+      "mean_fixture_expected_recall_at_5": 1.0
+    }
+  },
+  "targets_passed": true
+}

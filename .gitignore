@@ -1,0 +1,36 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts and local model/data caches
+build/
+dist/
+*.egg-info/
+.cache/
+models/
+dependency-check.json
+*.log
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Agent skill links point into .venv and break on other machines
+.agents/skills/
+.claude/skills/
